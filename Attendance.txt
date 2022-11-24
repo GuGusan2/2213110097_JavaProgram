@@ -1,0 +1,4 @@
+StudentID : 2213110097
+Fullname : Chanidapha Photharam
+AKA : GUS
+ClassDetail : Section 2
