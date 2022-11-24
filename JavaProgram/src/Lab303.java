@@ -18,7 +18,7 @@ public class Lab303 {
 		}
 		else if(withdraw%100 != 0)
 		{
-			JOptionPane.showMessageDialog(null,"Error: Cannot withdraw "+withdraw+"baht.","ERROR",JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,"Error: Cannot withdraw "+withdraw%100+" baht.","ERROR",JOptionPane.ERROR_MESSAGE);
 			
 		}
 		else if(withdraw <=20000) {
