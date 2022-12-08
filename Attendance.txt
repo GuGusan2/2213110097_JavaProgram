@@ -1,4 +1,5 @@
-StudentID : 2213110097
-Fullname : Chanidapha Photharam
-AKA : GUS
-ClassDetail : Section 2
+   Date : 08-12-2022 
+   StudentID:  2213110097
+   Fullname(in English):  Chanidapha Photharam
+   AKA : Gus
+   ClassDetail:  User-Defined Method with String
