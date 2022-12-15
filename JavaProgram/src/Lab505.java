@@ -33,7 +33,7 @@ public class Lab505 {
 	}
     
     public static boolean isITSubject(String subId) {
-    	if(subId.substring(0,3) == "21")//not finish
+    	if(subId.substring(0,3) == "21")
     		return true;
     	return false;
 		
