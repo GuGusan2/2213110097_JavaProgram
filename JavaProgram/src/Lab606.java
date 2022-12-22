@@ -7,16 +7,16 @@ public class Lab606 {
 	public static void main(String[] args) {
 		int[] number = { 25, 78, 41, 22, 36, 85, 37 };
 		int indexofArray = Integer.parseInt(JOptionPane.showInputDialog("Input index of array: "));
-		checkIndex(number, indexofArray);
-		currentData(number, indexofArray);
-		prevData(number, indexofArray);
-		nextData(number, indexofArray);
+		//checkIndex(number, indexofArray);
+        while(checkIndex(number, indexofArray)) {
+        	indexofArray = Integer.parseInt(JOptionPane.showInputDialog("Input index of array: ,again:"));
+        }
 		JOptionPane.showMessageDialog(null,
 				"Current data,number[" + (indexofArray) + "] is " + number[indexofArray] + "\n"
 						+ (indexofArray != 0 ? "Previous data,number["
 								+ (indexofArray - 1) + "] is " + prevData(number, indexofArray) : "No previous data")
 						+ "\n"
-						+ (indexofArray != number.length
+						+ (indexofArray != number.length - 1
 								? "Next data,number[" + (indexofArray + 1) + "] is " + nextData(number, indexofArray)
 								: "No next data"));
 	}// end of main()
