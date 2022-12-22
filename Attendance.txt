@@ -1,5 +1,5 @@
-   Date : 15-12-2022
+   Date : 22-12-2022
    StudentID: 2213110097
    Fullname(in English): Chanidapha Photharam
    AKA : Gus
-   ClassDetail: Array in Java
+   ClassDetail: Class and Object, Array of Object
