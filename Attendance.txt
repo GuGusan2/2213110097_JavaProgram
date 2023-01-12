@@ -1,5 +1,5 @@
-   Date : 22-12-2022
-   StudentID: 2213110097
-   Fullname(in English): Chanidapha Photharam
-   AKA : Gus
-   ClassDetail: Class and Object, Array of Object
+ Date : 12-Jan-2023
+ StudentID:2213110097
+ Fullname(in English): Chanidapha Photharam  
+ AKA : GUS
+ ClassDetail: GUI   
