@@ -1,17 +1,19 @@
 
 public class Author {
+
 	private String name;
 	private String email;
 	private char gender;
-
+	
 	public Author() {
 		name = email = "";
 		gender = ' ';
 	}
-
+	
 	public Author(String name, String email) {
 		this.name = name;
 		this.email = email;
+		gender = ' ';
 	}
 	
 	public Author(String name, String email, char gender) {
@@ -19,26 +21,31 @@ public class Author {
 		this.email = email;
 		this.gender = gender;
 	}
-
+	
 	public String getName() {
-		return name;
+		return this.name;
 	}
-
+	
 	public String getEmail() {
-		return email;
+		return this.email;
 	}
-
+	
 	public String getGenderName() {
-		if (Character.toUpperCase(this.gender) == 'M') {
+		if(Character.toString(this.gender).equalsIgnoreCase("m")) {
 			return "Male";
-		}if (Character.toUpperCase(this.gender) == 'F') {
+		} else if(Character.toString(this.gender).equalsIgnoreCase("f")) {
 			return "Female";
 		}
 		return "";
-
-	}// end of getGenderName()
+	}
 	
 	public String toString() {
-		return "Author name: "+ getName() + " (" + getEmail() + ";" + getGenderName() + ")";
+		return "Author name: "+getName()+" ("+getEmail()
+		       +";" +getGenderName() + ")"; 
 	}
+	
+	public String displayData() {
+		return getName()+" ("+getEmail() +")"; 
+	}
+	
 }
