@@ -1,5 +1,10 @@
+<<<<<<< HEAD
  Date : 26-Jan-2023
  StudentID:2213110097
+=======
+ Date  : 26-Jan-2023
+ Student ID :2213110097
+>>>>>>> 2b9eb4613d1be23fcfa728395edc4afce73290c2
  Fullname(in English): Chanidapha Photharam  
  AKA : GUS
  ClassDetail:  Composition and Inheritance
