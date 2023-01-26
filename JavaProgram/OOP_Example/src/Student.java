@@ -1,32 +1,60 @@
 
 public class Student {
-	//Attributes
+	//The private instance variables
 	private String name;
-	private int score;
-	
-	public void setName(String Name) {
-		name = Name;
+	private String address;
+	//The courses and grades for the courses are kept in 2 parallel arrays
+	private String[] courses;
+	private int[] grades; //valid range is [0,100]
+	private int numCourses; //Number of courses taken so far
+	//Maximum number of courses taken by student
+	private static final int MAX_COURSE = 30;
+
+	/**Constructor a instance with the given input*/
+	public Student(String name, String address) {
+		this.name = name;
+		this.address = address;
+		courses = new String[MAX_COURSE]; //allocate arrays
+		grades = new int [MAX_COURSE];
+		numCourses = 0;
+		
 	}
+	//the public getter and setter
+	//No setter for name as it is not designed to be change
 	public String getName() {
-		return name;
+		return this.name;
 	}
-	public void setScore(int Score) {
-		score = Score;
+	public String getAddress() {
+		return this.address;
 	}
-	public int getScore() {
-		return score;
+	public void setAddress(String address) {
+		this.address = address;
 	}
-	public boolean checkScore() {
-		return (score>=0 && score<=100)?true:false ;
+	public String toString() {
+		return getName()+" ("+getAddress()+")";
 	}
-	public boolean isPass() {
-		return (score>=50)?true:false ;
+	
+	/**Adds a course and grade*/
+	public void addCourseGrade(String course, int grade) {
+		courses[numCourses] = course;
+		grades[numCourses] = grade;
+		++numCourses;
 	}
-	public String findGrade(int score) {
-		return (score>=80 && score<=100)?"A":(score>=75)?"B+"
-				:(score>=70 )?"B":(score>=65)?"C+"
-				:(score>=60)?"C":(score>=55)?"D+"
-				:(score>=50 )?"D":"F";
-				
-      }
+	/**Prints all course and their grades*/
+	public void printGrade() {
+		System.out.print(name);
+		for(int i=0;i<numCourses;i++) {
+			System.out.print(" "+courses[i]+":"+grades[i]);
+		}
+		System.out.println();
+	}
+	/**Computes the average grade*/
+	public double getAverageGrade() {
+		int sum= 0;
+		for(int i=0;i<numCourses;i++) {
+			sum += grades[i];
+		}
+		return (double)sum/numCourses;
+	}
+
 }
