@@ -1,12 +1,5 @@
-<<<<<<< HEAD
- Date : 19-Jan-2023
- StudentID:2213110097
+ Date  : 26-Jan-2023
+ Student ID :2213110097
  Fullname(in English): Chanidapha Photharam  
  AKA : GUS
- ClassDetail:  Encapsulation
-=======
- StudentID: 2213110097  
- Fullname(in English): Chanidapha Photharam 
- AKA : Gus
- ClassDetail: Encapsulation
->>>>>>> 61e568154d8b6900dcca56eb239a52269fc715e7
+ ClassDetail:  Composition and Inheritance
